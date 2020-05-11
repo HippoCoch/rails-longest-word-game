@@ -1,0 +1,13 @@
+<h1>Home page of the game</h1>
+
+<button class="btn btn-success">
+<%= link_to "Display letter for play", display_letters_path  %>
+</button>
+
+
+<div class="form-inline container mt-5">
+  <form action="/results" method="get">
+    <input class="form-control" type="text" name="word" placeholder="Write a word" value="<%= params[:word] %>">
+    <input type="submit" value="Confirm!" class="btn btn-primary">
+  </form>
+</div>
